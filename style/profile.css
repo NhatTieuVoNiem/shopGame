@@ -1,0 +1,248 @@
+/* nav menu */
+
+.menu>a:nth-child(5)>svg {
+    fill: var(--purple--60);
+}
+
+/* body */
+
+
+
+.section__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__head--title {
+    font-size: 18px;
+}
+
+.section__head--left>p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section__head--menu-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.section__head--menu-bar>span {
+    color: var(--grey--60);
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section__head--menu-bar>span:nth-child(2) {
+    color: var(--while--00);
+}
+
+.profile-body {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+    padding: 50px 0 50px;
+}
+
+.welcome {
+    width: calc((100% - 30px) / 3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--purple--10);
+    border-radius: 18px;
+}
+
+.welcome>img {
+    width: 44px;
+    height: 44px;
+}
+
+.welcome>h3 {
+    margin: 10px 0;
+}
+
+.welcome>p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.welcome>.line {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.welcome>.line:last-child {
+    border-top: 2px solid var(--grey--20);
+}
+
+.welcome>.line>.line__icon {
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green--30);
+}
+
+.welcome>.line:last-child>.line__icon {
+    background-color: var(--purple--60);
+}
+
+.welcome>.line>.line__icon>svg {
+    fill: var(--while--00);
+    width: 32px;
+    height: 32px;
+}
+
+.welcome>.line>p {
+    color: var(--purple--60);
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.following {
+    width: calc(100% - ((100% - 30px) / 3));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.following__body {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.activity__card {
+    width: calc((100% - 30px) / 2);
+    border-radius: 18px;
+    padding: 20px;
+    gap: 15px;
+    background-color: var(--purple--10);
+    display: flex;
+}
+
+.activity__card--image {
+    width: 44px;
+    height: 44px;
+}
+
+.activity__card--image>img {
+    width: 100%;
+    height: 100%;
+}
+
+.activity__card--text {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity__card--text-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity__card--text-left>span:last-child {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.btn__view--red {
+    background-color: var(--red--30);
+}
+
+@media (max-width: 1280px) {
+    .profile-body {
+        flex-direction: column;
+    }
+
+    .welcome {
+        width: 100%;
+    }
+
+    .following {
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .following__body {
+        flex-direction: column;
+    }
+
+    .activity__card {
+        width: 100%;
+    }
+}
+
+/* bought section */
+
+.bought-section {
+    flex-direction: column;
+    padding: 50px 0;
+    gap: 30px;
+}
+
+.bought__body {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.bought__card {
+    width: calc((100% - 90px) /4);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 18px;
+    background-color: var(--purple--10);
+}
+
+.bought__card--bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 10px 0 0;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.bought__card--bottom>img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    border: 1px solid var(--while--00);
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+}
+
+@media (max-width: 1280px) {
+    .bought__body {
+        flex-wrap: wrap;
+    }
+
+    .bought__card {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .bought__card {
+        width: 100%;
+    }
+}
